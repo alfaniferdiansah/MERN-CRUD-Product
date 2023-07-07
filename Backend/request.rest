@@ -1,0 +1,27 @@
+GET http://localhost:3010/products
+
+###
+GET http://localhost:3010/products/640c36b2a8c2657fadac4590
+
+###
+POST http://localhost:3010/products
+Content-Type: application/json
+
+{
+    "nama": "Laptop LENOVO",
+    "harga": 8000000,
+    "stock": 11
+}
+
+###
+PATCH  http://localhost:3010/products/640c36b2a8c2657fadac4590
+Content-Type: application/json
+
+{
+    "nama": "Laptop ASUS",
+    "harga": 10000000,
+    "stock": 8
+}
+
+###
+DELETE  http://localhost:3010/products/640c36e7a8c2657fadac4592
